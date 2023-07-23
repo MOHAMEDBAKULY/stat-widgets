@@ -1,0 +1,206 @@
+body{
+    font-family: 'Kanit', sans-serif; 
+    background: rgb(43, 39, 39);
+    color: rgb(233, 239, 246);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border: 4px solid green;
+    height: 90vh;
+    gap:40px ;
+}
+
+ .red{
+    background: black;
+    border: 4px solid orangered;
+    height: 180px;
+    border-radius: 10px;
+    width: 300px;
+}
+.upper{
+    display: flex;
+    justify-content: space-around;
+}
+.upper .revenue{
+    margin-left: -40px;
+    color: grey;
+}
+
+.upper .revenue i{
+    color: orangered;
+    font-size: 24px;
+    padding-right: 5px;
+}
+.upper p{
+    font-size: 17px;
+}
+
+.upper .funds{
+    color: green;
+    font-size: 18px;
+    margin-right: -20px;
+}
+
+.red .center {
+    color: rgb(238, 227, 227);
+    margin-left: 100px;
+    margin-top: -10px;
+    font-size: 45px;
+}
+
+.red h2{
+    letter-spacing: 3px;
+}
+
+.red .down p{
+    display: flex;
+    justify-content: space-around;
+    margin-top:-15px;
+}
+
+.down p{
+    color: grey;
+    margin-left: -50px;
+    font-size: 18px;
+}
+
+.down i{
+    margin-right: -40px;
+}
+
+
+.orange{
+    background: black;
+    border: 4px solid yellow;
+    height: 180px;
+    border-radius: 10px;
+    width: 180px;
+}
+
+.orange .upper{
+    padding-left:20px;
+}
+
+.orange .upper i{
+    color: yellow;
+}
+
+.orange h2{
+    margin-top: -10px;
+    margin-left: 80px;
+    font-size: 45px;
+}
+
+.orange .down{
+    justify-self: space-between ;
+    margin-left: 55px;
+    padding-bottom: -50px;
+}
+
+.orange .down p{
+    margin-top: -15px;
+}
+
+.orange .down i{
+    margin-left: 80px;
+}
+
+.purple {
+    background: black;
+    border: 4px solid purple;
+    height: 180px;
+    border-radius: 10px;
+    width: 240px;
+}
+
+.purple .upper{
+    margin-left: 10px;
+}
+
+.purple .upper i{
+    color: rgb(201, 22, 201);
+}
+
+.purple h2{
+    margin-left: 140px;
+    font-size: 45px;
+    margin-top: -8px;
+}
+
+.purple .down{
+    margin-left: 54px;
+}
+
+.purple .down i{
+   margin-left: 140px;
+}
+
+.purple .down p{
+    margin-top: -20px;
+}
+
+
+/* MOBILE VIEW SECTION */
+
+@media (max-width: 425px) {
+    .container {
+       display: grid;
+       gap:8px;
+    }
+    .red{
+        width: 380px;
+        height: 200px;
+    }
+    .red .upper{
+     margin-right:160px ;
+    }
+    .red .funds{
+       margin-right: -190px;
+       font-size: 20px;
+    }
+    .red h2{
+        margin-left:290px;
+    }
+
+    .orange{
+        width: 380px;
+        height: 200px;
+    }
+    .orange .upper{
+        margin-left:-80px;
+    }
+    .orange .funds{
+        margin-right: -90px;
+        font-size: 20px;
+    }
+    .orange h2{
+        margin-left: 250px;
+    }
+    .orange .down i{
+        margin-left: 75%;
+    }
+    .purple{
+        width: 380px;
+        height: 200px;
+    }
+    .purple .upper{
+        margin-left:-30px;
+    }
+    .purple .funds{
+        margin-right: -70px;
+        font-size: 20px;
+    }
+    .purple h2{
+        margin-left:67% ;
+    }
+    .purple .down i{
+        margin-left: 75%;
+    }
+}
